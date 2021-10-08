@@ -390,3 +390,28 @@ button:hover{
     color: coral;
     background: cornsilk;
 }
+/* single product css start */
+#sproduct{}
+#sproduct .product_details{
+    padding: 10px;
+}
+#sproduct .product_details h4{
+    padding: 10px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+#sproduct .product_details h5{
+    padding: 10px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+#sproduct .product_details h6{
+    padding: 10px;
+}
+#sproduct .product_details .buy_button{
+    margin-top: 20px;
+}
+#sproduct .row .sinpdt{
+    border: 1px solid #ddd;
+}
+/* single product css end */

@@ -44,19 +44,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
                 <i class="fas fa-search"></i>
@@ -70,24 +70,24 @@
     <!-- sproducts start-->
 <section id="sproduct" class=" container my-5 pt-5">
   <div class="row mt-5">
-    <div class="col-lg-5 col-md-12 col-sm-12">
-      <img class="img-fluid w-100 pb-1" src="images/spp/1.png" alt="">
+    <div class=" sinpdt col-lg-5 col-md-12 col-sm-12" >
+      <img id="mainImg" class="img-fluid w-100 pb-1" src="images/spp/1.png" alt="">
       <div class="small_img_group">
         <div class="small_img">
-          <img class="img-fluid w-100" src="images/spp/2.png" alt="">
+          <img class="img-fluid smallImg w-100" src="images/spp/2.png" alt="">
         </div><div class="small_img">
-          <img class="img-fluid w-100" src="images/spp/3.png" alt="">
+          <img class="img-fluid smallImg w-100" src="images/spp/3.png" alt="">
         </div><div class="small_img">
-          <img class="img-fluid w-100" src="images/spp/4.png" alt="">
+          <img class="img-fluid smallImg w-100" src="images/spp/4.png" alt="">
         </div><div class="small_img">
-          <img class="img-fluid w-100" src="images/spp/4.png" alt="">
+          <img class="img-fluid smallImg w-100" src="images/spp/1.png"  alt="">
         </div>
       </div>
     </div>
     <div class="product_details">
       <h6>Home / T-Shart</h6>
       <h4>Men Fasiou T Shart</h4>
-      <h4>$222.00</h4>
+      <h5>$222.00</h5>
       <select class="p-2">
         <option value="">Seclet</option>
         <option value="">M</option>
@@ -238,6 +238,32 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<script>
+  var mainImg = document.getElementById("mainImg");
+  var smallImg = document.getElementsByClassName("smallImg");
+
+  smallImg[0].onclick = function()
+  {
+    mainImg.src = smallImg[0].src;
+  }
+  smallImg[1].onclick = function()
+  {
+    mainImg.src = smallImg[1].src;
+  }
+  smallImg[2].onclick = function()
+  {
+    mainImg.src = smallImg[2].src;
+  }
+  smallImg[3].onclick = function()
+  {
+    mainImg.src = smallImg[3].src;
+  }
+</script>
+<script>
+  function OnClickFn(){
+    document.location.href="sproduct.html";
+  }
+</script>
 
 </body>
 </html>
